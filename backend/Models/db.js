@@ -1,6 +1,8 @@
 const mongoose=require('mongoose')
-const DB_URL=process.env.DB_URL;
-mongoose.connect(DB_URL)
+
+
+
+mongoose.connect("mongodb://localhost:27017/taskmanager")
 .then(() => {
     console.log("✅ MongoDB is Connected.....");
   })
